@@ -5,7 +5,7 @@ import android.text.format.Time;
  * Created by Никита on 08.06.2017.
  */
 
-public class myTime {
+public class MyTime {
     double
             globalTime,         // Global time in seconds     (without pauses)
             globalDeltaTime,    // Interframe time in seconds (without pauses)
@@ -22,7 +22,8 @@ public class myTime {
             frameCounter;       // Frame counter for FPS measure
     boolean
             isPause;            // Pause flag
-    void update() {
-        java. Time = Runtime();
+    void update()
+    {
+        int i = 0;
     }
 }
