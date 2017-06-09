@@ -1,2 +1,0 @@
-# ClickAllOfThem
-Best Clicker
