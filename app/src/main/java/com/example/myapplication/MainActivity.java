@@ -8,9 +8,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    static double DPS = 0;
-    static double DPC = 10;
-    static long Credits;
+    public static double DPS = 0;
+    public static double DPC = 10;
+    public static long Credits;
 
 
     @Override
