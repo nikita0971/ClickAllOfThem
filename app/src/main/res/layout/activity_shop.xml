@@ -9,7 +9,7 @@
     <Button
         android:layout_width="100dp"
         android:layout_height="61dp"
-        android:text="гуц"
+        android:text="mega blast 3000"
         android:textColor="@android:color/holo_purple"
         android:id="@+id/button1" />
     <Button
