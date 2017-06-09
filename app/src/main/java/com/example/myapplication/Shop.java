@@ -17,18 +17,5 @@ public class Shop extends AppCompatActivity {
 
 
 
-        final long[] mon = {100000};
-
-        Button button = (Button) findViewById(R.id.button1);
-        final Shop this_ = this;
-        View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(this_, Shop.class);
-                mon[0] -=  100;
-            }
-        };
-        button.setOnClickListener(listener);
-
     }
 }
