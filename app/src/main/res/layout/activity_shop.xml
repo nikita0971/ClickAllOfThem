@@ -9,7 +9,7 @@
     <Button
         android:layout_width="100dp"
         android:layout_height="61dp"
-        android:text="lot 1001"
+        android:text="гуц"
         android:textColor="@android:color/holo_purple"
         android:id="@+id/button1" />
     <Button
@@ -24,7 +24,7 @@
     <Button
         android:layout_width="100dp"
         android:layout_height="61dp"
-        android:text="lot 3 51 000"
+        android:text="lot 3 51 001"
         android:id="@+id/button3"
         android:textColor="@android:color/holo_purple"
         android:layout_below="@+id/button2"
