@@ -23,6 +23,6 @@ public class myTime {
     boolean
             isPause;            // Pause flag
     void update() {
-        int i = 1;
+        java. Time = Runtime();
     }
 }
