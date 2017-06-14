@@ -43,7 +43,6 @@ public class graphics extends MainActivity {
                 layoutParams.setMargins(150, 150, 0, 0);
                 img.setLayoutParams(layoutParams);
             }
-
         });
     }
 }
