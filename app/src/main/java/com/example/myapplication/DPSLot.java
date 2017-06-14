@@ -28,12 +28,12 @@ public class DPSLot extends Lot {
     public double getCost(double curentLevel){
         return PurchaseCost / 10 * pow(1.082, getCurentLevel());
     }
-
     public  void createLot( double improvementBonus, int heroUnlockOrder, double purchaseCost, Button button ) {
         ImprovementBonus = improvementBonus;
         HeroUnlockOrder = heroUnlockOrder;
         PurchaseCost = purchaseCost;
         DPSButton = button;
+
     }
 
     public void buyLot( double Credits ) {
