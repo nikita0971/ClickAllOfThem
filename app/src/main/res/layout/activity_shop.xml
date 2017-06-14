@@ -56,85 +56,85 @@
             android:text="lot 3 50 000"
             android:textColor="@android:color/holo_purple" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="lot 3 50 000"
-        android:id="@+id/button5"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="lot 3 50 000"
-        android:id="@+id/button6"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="lot 3 50 000"
-        android:id="@+id/button7"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="lot 3 50 000"
-        android:id="@+id/button8"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="lot 3 50 000"
-        android:id="@+id/button9"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="lot 3 50 000"
-        android:id="@+id/button10"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button9"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="lot 3 50 000"
-        android:id="@+id/button11"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button10"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="гы"
-        android:id="@+id/button12"
-        android:textColor="@android:color/holo_purple"
-        android:layout_below="@+id/button11"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button4"
+            android:text="lot 3 50 000"
+            android:textColor="@android:color/holo_purple" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button5"
+            android:text="lot 3 50 000"
+            android:textColor="@android:color/holo_purple" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button6"
+            android:text="lot 3 50 000"
+            android:textColor="@android:color/holo_purple" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button7"
+            android:text="lot 3 50 000"
+            android:textColor="@android:color/holo_purple" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button8"
+            android:text="lot 3 50 000"
+            android:textColor="@android:color/holo_purple" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button9"
+            android:text="lot 3 50 000"
+            android:textColor="@android:color/holo_purple" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button10"
+            android:text="lot 3 50 000"
+            android:textColor="@android:color/holo_purple" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button11"
+            android:text="гnuniы"
+            android:textColor="@android:color/holo_purple" />
 
 
-
-
-
-    </RelativeLayout>
-</ScrollView>
-
-
-
+</RelativeLayout>
