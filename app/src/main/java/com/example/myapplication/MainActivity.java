@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final Button hitButton = (Button)findViewById(R.id.hitButton);
         hitButton.setOnClickListener(this);
     }
+
     public void rotate(float degree)
     {
         ImageView weapon1 = (ImageView)findViewById(R.id.weapon1);
