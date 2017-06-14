@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public static double DPS = 0;
     public static double DPC = 10;
-    public static long Credits;
-    static int flag = -1;
+    public static long Credits = 0;
     static float deg = -45;
 
 
@@ -33,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final Button hitButton = (Button)findViewById(R.id.hitButton);
         hitButton.setOnClickListener(this);
     }
-
     public void rotate(float degree)
     {
         ImageView weapon1 = (ImageView)findViewById(R.id.weapon1);

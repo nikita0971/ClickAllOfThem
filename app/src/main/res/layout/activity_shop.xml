@@ -19,13 +19,11 @@
             android:id="@+id/button1"
             android:layout_width="100dp"
             android:layout_height="61dp"
-            android:layout_alignEnd="@+id/button2"
             android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/button2"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
             android:text="mega blast 3000"
-            android:textColor="@android:color/holo_purple" />
+            android:textColor="@android:color/holo_purple"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignEnd="@+id/button2" />
 
         <Button
             android:id="@+id/button2"
