@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.myapplication.MainActivity">
@@ -10,9 +11,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:id="@+id/shopButton"
-
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -21,22 +20,22 @@
         />
 
     <Button
+        android:id="@+id/hitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hitButton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_above="@+id/shopButton"
-        android:visibility="invisible"
-        />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:alpha="0"/>
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="5dp"
-        android:weightSum="1">
+        android:weightSum="1"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,7 +43,25 @@
         android:layout_height="98dp"
         android:src="@drawable/monstrik" />
 
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:scaleType="fitEnd"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/weapon1"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        android:src="@drawable/stick"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_above="@+id/shopButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+    />
 
 </RelativeLayout>
