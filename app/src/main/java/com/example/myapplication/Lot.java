@@ -19,6 +19,7 @@ public abstract class Lot {
     public abstract double getCost(double curentLevel);
 
     public abstract void buyLot( double Credits );
+    public abstract void createLot(double improvementBonus, int heroUnlockOrder, double purchaseCost, Button button);
 }
 
 

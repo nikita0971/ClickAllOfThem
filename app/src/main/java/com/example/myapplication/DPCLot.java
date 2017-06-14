@@ -1,11 +1,12 @@
 package com.example.myapplication;
 
-import com.example.myapplication.MainActivity;
-
+import android.provider.ContactsContract;
+import android.widget.Button;
 import static java.lang.Math.pow;
 
 public class DPCLot extends Lot {
     private double ImprovementBonus;
+    private Button DPCButton;
 
     public double getImprovementBonus() {
         return ImprovementBonus;
@@ -19,5 +20,9 @@ public class DPCLot extends Lot {
         ImprovementBonus = getCurentLevel() % 10;
         MainActivity.Credits -= getCost(getCurentLevel());
         MainActivity.DPC = getCurentLevel() * ImprovementBonus;
+    }
+    public void createLot(double improvementBonus, int heroUnlockOrder, double purchaseCost, Button button) {
+        ImprovementBonus = improvementBonus;
+        DPCButton = button;
     }
 }

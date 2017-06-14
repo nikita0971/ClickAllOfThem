@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import android.widget.Button;
 
-import static java.lang.Math.max;
 import static java.lang.Math.min;
 import static java.lang.Math.pow;
 
@@ -11,9 +10,10 @@ public class DPSLot extends Lot {
     private double ImprovementBonus;
     private int HeroUnlockOrder;
     private double PurchaseCost;
-    private Button button;
+    private Button DPSButton;
 
     public double getImprovementBonus() {
+
         return ImprovementBonus;
     }
 
@@ -29,8 +29,15 @@ public class DPSLot extends Lot {
         return PurchaseCost / 10 * pow(1.082, getCurentLevel());
     }
 
+    public  void createLot( double improvementBonus, int heroUnlockOrder, double purchaseCost, Button button ) {
+        ImprovementBonus = improvementBonus;
+        HeroUnlockOrder = heroUnlockOrder;
+        PurchaseCost = purchaseCost;
+        DPSButton = button;
+    }
+
     public void buyLot( double Credits ) {
-        ImprovementBonus = getCurentLevel() % 10;
+        ImprovementBonus = (double)(((int)getCurentLevel() / 10) + 1);
         MainActivity.Credits -= getCost(getCurentLevel());
         PurchaseCost = getCost(getCurentLevel());
         HeroUnlockOrder++;
