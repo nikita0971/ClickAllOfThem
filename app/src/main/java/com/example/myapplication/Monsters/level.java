@@ -1,8 +1,12 @@
 package com.example.myapplication.Monsters;
 
 /**
- * Created by user on 6/14/17.
+ * Created by kononovk
  */
 
-public class level {
+public class level
+{
+    double NumOfLvl = 1;
+    double NumOfWave = 1;
+
 }

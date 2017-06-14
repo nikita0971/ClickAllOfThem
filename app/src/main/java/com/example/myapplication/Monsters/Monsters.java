@@ -8,7 +8,7 @@ import android.widget.ImageView;
 public class Monsters
 {
     protected int hp;
-    protected int gold;
+    protected int MonsterGold;
     ImageView Image;
 
     int GetHp()
@@ -17,7 +17,7 @@ public class Monsters
     }
     int GetGold()
     {
-        return gold;
+        return MonsterGold;
     }
     ImageView GetImg()
     {
