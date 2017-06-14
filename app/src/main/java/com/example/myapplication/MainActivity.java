@@ -8,8 +8,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    int damagePerSec = 0;
-    int damagePerClick = 10;
+    static double DPS = 0;
+    static double DPC = 10;
+    static long Credits;
 
 
     @Override

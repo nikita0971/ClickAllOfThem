@@ -14,6 +14,7 @@ public class DPSLot extends Lot {
     private Button button;
 
     public double getImprovementBonus() {
+
         return ImprovementBonus;
     }
 
@@ -29,8 +30,12 @@ public class DPSLot extends Lot {
         return PurchaseCost / 10 * pow(1.082, getCurentLevel());
     }
 
+    public void creatLot(){
+
+    }
+
     public void buyLot( double Credits ) {
-        ImprovementBonus = getCurentLevel() % 10;
+        ImprovementBonus = (double)(((int)getCurentLevel() / 10) + 1);
         MainActivity.Credits -= getCost(getCurentLevel());
         PurchaseCost = getCost(getCurentLevel());
         HeroUnlockOrder++;
