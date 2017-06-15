@@ -6,5 +6,6 @@ package com.example.myapplication.Monsters;
 
 public class Wave
 {
-
+    int NumOfMonsters = 10;
+    int NumOfWave = 0;
 }

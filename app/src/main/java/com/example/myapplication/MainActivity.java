@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.myapplication.graphics.graphics;
 
@@ -20,9 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static long Credits = 0;
     static float deg = -45;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         final Button hitButton = (Button)findViewById(R.id.hitButton);
         hitButton.setOnClickListener(this);
+
+        final TextView TextMoney = (TextView)findViewById(R.id.TextMoney);
+        TextMoney.setText("Coins: " + MainActivity.Credits);
+
+        final TextView TextStatistics = (TextView)findViewById(R.id.TextStatistics);
+        TextStatistics.setText("DPC: " + (int)MainActivity.DPC  +
+                               "DPS: " + (int)MainActivity.DPS);
     }
     public void rotate(float degree)
     {
