@@ -15,12 +15,10 @@ import com.example.myapplication.graphics.graphics;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    static double DPS = 0;
-    static double DPC = 10;
-    static long Credits;
-    static int flag = -1;
+    public static double DPS = 0;
+    public static double DPC = 10;
+    public static long Credits = 0;
     static float deg = -45;
-
 
 
     @Override
