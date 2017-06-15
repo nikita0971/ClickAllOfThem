@@ -1,19 +1,28 @@
 package com.example.myapplication.Monsters;
 import android.widget.ImageView;
 
+import com.example.myapplication.MainActivity;
+
 /**
  * Created by Kononov Nickolay
  */
 
-public class Monsters
+public abstract class Monsters
 {
-    protected int hp;
-    protected int MonsterGold;
+    public static int hpmax;
+    public static int hp = 10;
+    public static int MonsterGold = 10;
     ImageView Image;
+    int NumOfWave = 1;
+    int NumOfMonsters = 10;
 
     int GetHp()
     {
         return hp;
+    }
+    int GetHpMax()
+    {
+        return hpmax;
     }
     int GetGold()
     {
@@ -23,6 +32,13 @@ public class Monsters
     {
         return Image;
     }
+    public static void HitDamage( double damage )
+    {
+       hp -= damage;
+       if (hp <= 0)
+       {
+           MainActivity.Credits += MonsterGold;
+           hp = hpmax;
+       }
+    }
 }
-
-

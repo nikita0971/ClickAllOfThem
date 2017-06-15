@@ -18,15 +18,11 @@
 
     <ImageView
         android:id="@+id/monstrik1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="64sp"
-        android:layout_marginTop="64sp"
-        android:layout_marginBottom="70sp"
-        android:src="@drawable/monstrik1"
-        android:layout_above="@+id/weapon1" />
+        android:layout_width="223dp"
+        android:layout_height="199dp"
+        android:layout_above="@+id/weapon1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/monstrik1" />
 
     <Button
         android:layout_width="wrap_content"
@@ -83,5 +79,6 @@
         android:textStyle="italic"
         android:textColor="@android:color/holo_red_light"
         />
+
 </RelativeLayout>
 

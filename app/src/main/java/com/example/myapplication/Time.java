@@ -2,7 +2,9 @@ package com.example.myapplication;
 
 import java.util.Date;
 
-class Time {
+class Time
+{
+
     static long getTime() {
         Date date = new Date();
 

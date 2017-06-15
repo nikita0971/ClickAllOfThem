@@ -6,12 +6,14 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.myapplication.Monsters.Monsters;
 import com.example.myapplication.graphics.graphics;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static double DPC = 10;
     public static long Credits = 0;
     static float deg = -45;
+
+    TextView TextMoney, TextStatistics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,12 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final Button hitButton = (Button)findViewById(R.id.hitButton);
         hitButton.setOnClickListener(this);
 
-        final TextView TextMoney = (TextView)findViewById(R.id.TextMoney);
-        TextMoney.setText("Coins: " + MainActivity.Credits);
+        TextMoney = (TextView)findViewById(R.id.TextMoney);
+        TextStatistics = (TextView)findViewById(R.id.TextStatistics);
 
-        final TextView TextStatistics = (TextView)findViewById(R.id.TextStatistics);
+        TextMoney.setText("Coins: " + MainActivity.Credits);
         TextStatistics.setText("DPC: " + (int)MainActivity.DPC  +
-                               "DPS: " + (int)MainActivity.DPS);
+                "  DPS: " + (int)MainActivity.DPS);
     }
     public void rotate(float degree)
     {
@@ -60,11 +64,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.hitButton:
+            {
                 rotate(deg);
                 deg = -deg;
+                Monsters.HitDamage(DPC);
+                TextMoney.setText("Coins: " + MainActivity.Credits);
+                TextStatistics.setText("DPC: " + (int)MainActivity.DPC  +
+                                       "  DPS: " + (int)MainActivity.DPS);
                 break;
-            default:
-                break;
+            }
         }
 
     }
