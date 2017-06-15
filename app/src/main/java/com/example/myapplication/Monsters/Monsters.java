@@ -9,8 +9,8 @@ import com.example.myapplication.MainActivity;
 
 public abstract class Monsters
 {
-    public static int hpmax;
-    public static int hp = 10;
+    public static int hpmax = 5;
+    public static int hp = 5;
     public static int MonsterGold = 10;
     ImageView Image;
     int NumOfWave = 1;

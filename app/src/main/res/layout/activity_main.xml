@@ -24,6 +24,30 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/monstrik1" />
 
+    <TextView
+        android:id="@+id/TextHp"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/monstrik1"
+        android:layout_alignLeft="@+id/monstrik1"
+        android:layout_alignStart="@+id/monstrik1"
+        android:layout_toLeftOf="@+id/weapon1"
+        android:layout_toStartOf="@+id/weapon1"
+        android:alpha="1"
+        android:textColor="@android:color/holo_red_light"/>
+    <TextView
+        android:id="@+id/TextDHp"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/monstrik1"
+        android:layout_alignRight="@+id/monstrik1"
+        android:layout_alignEnd="@+id/monstrik1"
+        android:textColor="@android:color/white"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,15 +81,12 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <ImageView
-        android:layout_width="32sp"
-        android:layout_height="32sp"
-        android:src="@drawable/money"/>
     <TextView
         android:id="@+id/TextMoney"
         android:layout_width="match_parent"
-        android:layout_marginLeft="32sp"
         android:layout_height="32sp"
+        android:background="#37AEE4"
+        android:alpha="0.3"
         android:textSize="28sp"
         android:textStyle="italic"
         android:textColor="@android:color/holo_red_light"
@@ -75,10 +96,20 @@
         android:layout_width="match_parent"
         android:layout_marginTop="32sp"
         android:layout_height="32sp"
+        android:background="#37AEE4"
+        android:alpha="0.3"
         android:textSize="28sp"
         android:textStyle="italic"
         android:textColor="@android:color/holo_red_light"
         />
+    <ImageView
+        android:id="@+id/Money"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:src="@drawable/money">
+    </ImageView>
+
+
 
 </RelativeLayout>
 

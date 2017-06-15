@@ -14,10 +14,11 @@ import static com.example.myapplication.R.drawable.monstrik1;
 
 public class graphics extends MainActivity
 {
+    public static ImageView IV1;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ImageView monstrik1 = (ImageView)findViewById(R.id.monstrik1);
+        IV1 = (ImageView)findViewById(R.id.monstrik1);
         setContentView(R.layout.activity_main);
     }
 }
