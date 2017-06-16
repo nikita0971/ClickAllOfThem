@@ -17,88 +17,81 @@
 
         <Button
             android:id="@+id/Lot1"
-
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-
+            android:layout_height="64sp"
+            android:layout_marginLeft="64sp"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/Lot2"
             android:layout_alignEnd="@+id/Lot2"
-
-            android:text="Lot 1"/>
+            android:text="Wooden Sword"/>
+        <ImageView
+            android:id="@+id/wooden_sword"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:src="@drawable/weapon1"/>
 
         <Button
             android:id="@+id/Lot2"
-
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-
+            android:layout_height="64sp"
+            android:layout_marginLeft="64sp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/Lot1"
-
-            android:textColor="@android:color/holo_purple"
-            android:text="Lot 2"/>
+            android:text="iron sword"/>
+        <ImageView
+            android:layout_below="@+id/wooden_sword"
+            android:id="@+id/iron_sword"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:src="@drawable/weapon2"/>
 
         <Button
             android:id="@+id/Lot3"
-
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-
+            android:layout_height="64sp"
+            android:layout_marginLeft="64sp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/Lot2"
+            android:text="brilliant sward"/>
+        <ImageView
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:layout_below="@+id/iron_sword"
+            android:src="@drawable/weapon3"/>
 
-            android:textColor="@android:color/holo_purple"
-            android:text="Lot 3"/>
 
         <Button
             android:id="@+id/Lot4"
-
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-
+            android:layout_height="64sp"
+            android:layout_marginLeft="64sp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/Lot3"
-
-            android:textColor="@android:color/holo_purple"
             android:text="Lot 4"/>
 
         <Button
             android:id="@+id/Lot5"
-
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-
+            android:layout_height="64sp"
+            android:layout_marginLeft="64sp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/Lot4"
-
-            android:textColor="@android:color/holo_purple"
             android:text="Lot 5"/>
 
         <Button
             android:id="@+id/Lot6"
-
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-
+            android:layout_height="64sp"
+            android:layout_marginLeft="64sp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/Lot5"
-
-            android:textColor="@android:color/holo_purple"
             android:text="Lot 6"/>
 
-        <TextView
-            android:id="@+id/ED"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/Lot6"/>
     </RelativeLayout>
 </ScrollView>
 
