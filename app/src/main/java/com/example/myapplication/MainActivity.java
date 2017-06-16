@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -84,16 +86,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onAnimationImage1(View v)
     {
-        IV1.startAnimation(anim1);
+        v.startAnimation(anim1);
     }
 
     public void onAnimationImage2(View v)
     {
-        IV1.startAnimation(anim2);
+        v.startAnimation(anim2);
     }
-    public void onAnimationText1(View v)
+    public void onAnimationText1(final View v)
     {
-        Dhp.startAnimation(anim3);
+        v.animate().cancel();
+        v.setVisibility(View.VISIBLE);
+        v.setAlpha(1);
+        v.setTranslationY(0.0f);
+        v.animate().alpha(0.0f).translationYBy(-150).setDuration(1000).setListener(new AnimatorListenerAdapter()
+        {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                v.setVisibility(View.GONE);
+            }
+        });
     }
 
 
@@ -130,15 +142,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                        "  DPS: " + (int)MainActivity.DPS);
                 TextHP.setText("HP:" + Monsters.hp);
 
-                if(Monsters.hp != Monsters.hpmax)
-                {
-                    String str = new String("-" + DPC);
-                    TextDHP.setText(str);
-                    onAnimationText1(Dhp);
-                }
+                TextDHP.setText("-" + DPC);
+                onAnimationText1(Dhp);
                 break;
             }
         }
-
     }
 }
