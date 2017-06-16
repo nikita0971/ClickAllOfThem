@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static long Credits = 0;
     static float deg = -90;
     private Animation anim1, anim2, anim3;
-    private ImageView IV1; // monsters array
-    private ImageView WP1; // weapons array
-    private TextView Dhp;
+    public ImageView IV1; // monsters array
+    public ImageView WP1; // weapons array
+    public TextView Dhp;
     TextView TextMoney, TextStatistics, TextHP, TextDHP; // Money Text and DPS&DPC Text
     int flag = 1;
 
