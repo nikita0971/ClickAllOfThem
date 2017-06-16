@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                        "  DPS: " + (int)MainActivity.DPS);
                 TextHP.setText("HP:" + Monsters.hp);
 
-                TextDHP.setText("-" + DPC);
+                TextDHP.setText("-" + (int)DPC);
                 onAnimationText1(Dhp);
                 break;
             }
