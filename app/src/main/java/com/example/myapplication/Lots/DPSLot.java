@@ -36,11 +36,18 @@ public class DPSLot {
             return;
         else
             currentLVL++;
-        if (currentLVL >= 20 && (currentLVL - 10 ) % 10 == 0)
+        if (currentLVL >= 20 && (currentLVL - 10) % 10 == 0)
             IMP_Bonus = pow(2, (currentLVL - currentLVL % 10 - 10) / 10);
         MainActivity.Credits -= getCost();
         purchaseCost = getCost();
         MainActivity.DPS = purchaseCost / 10 * pow(1 - min(heroUnlockOrder, 34) * 23 / 1000, min(heroUnlockOrder, 34)) * IMP_Bonus;
+    }
+
+    public double getDMG(){
+        currentLVL++;
+        double PC = purchaseCost / 10 * pow(1 - min(heroUnlockOrder, 34) * 23 / 1000, min(heroUnlockOrder, 34)) * IMP_Bonus - MainActivity.DPS;
+        currentLVL--;
+        return PC;
     }
 
     public DPSLot( double ImprovementBonus, double CurrentLevel, int HeroUnlockOrder, double PurchaseCost ) {

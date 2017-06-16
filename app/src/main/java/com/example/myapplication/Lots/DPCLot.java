@@ -40,6 +40,10 @@ public class DPCLot {
         MainActivity.Credits -= getCost(currentLVL);
         MainActivity.DPC = currentLVL * IMP_Bonus;
     }
+
+    public double getDMG() {
+        return (currentLVL + 1) * IMP_Bonus - MainActivity.DPC;
+    }
     public DPCLot(double ImprovementBonus, double CurrentLevel, double PurchaseCost) {
         IMP_Bonus = ImprovementBonus;
         currentLVL = CurrentLevel;

@@ -18,13 +18,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public static double DPS = 0;
     public static double DPC = 1;
+
     public static long Credits = 0;
+
     static float deg = -90;
+
     private Animation anim1, anim2, anim3;
     public ImageView IV1; // monsters array
     public ImageView WP1; // weapons array
     public TextView Dhp;
     TextView TextMoney, TextStatistics, TextHP, TextDHP; // Money Text and DPS&DPC Text
+
     int flag = 1;
 
     @Override
