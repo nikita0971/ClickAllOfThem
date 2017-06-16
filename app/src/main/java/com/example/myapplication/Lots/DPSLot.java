@@ -5,32 +5,45 @@ import com.example.myapplication.MainActivity;
 import static java.lang.Math.min;
 import static java.lang.Math.pow;
 
-public class DPSLot extends Lot {
+public class DPSLot {
 
-    private static int heroUnlockOrder;
-    private static double purchaseCost;
+    private double currentLVL;
+    private double purchaseCost;
+    private double IMP_Bonus;
+    private int heroUnlockOrder;
 
-    public static int getHeroUO() {
+    public double getPurchaseCost() { return purchaseCost; }
+
+    public double getCurrentLVL() {
+        return currentLVL;
+    }
+
+    public double getIMP_Bonus() {
+        return IMP_Bonus;
+    }
+
+
+    public  int getHeroUO() {
         return heroUnlockOrder;
     }
 
-    public static double getPC() {
-        return purchaseCost;
+    public double getCost(){
+        return purchaseCost * pow(1.082, currentLVL);
     }
 
-    public static double getCost(double curentLevel){
-        return purchaseCost / 10 * pow(1.082, curentLevel);
+    public void buyLot() {
+        if (MainActivity.Credits < purchaseCost)
+            return;
+        else
+            currentLVL++;
+        if (currentLVL >= 20 && (currentLVL - 10 ) % 10 == 0)
+            IMP_Bonus = pow(2, (currentLVL - currentLVL % 10 - 10) / 10);
+        MainActivity.Credits -= getCost();
+        purchaseCost = getCost();
+        MainActivity.DPS = purchaseCost / 10 * pow(1 - min(heroUnlockOrder, 34) * 23 / 1000, min(heroUnlockOrder, 34)) * IMP_Bonus;
     }
 
-    public static void buyLot( double Credits ) {
-        IMP_Bonus = (double)(((int)currentLVL / 10) + 1);
-        MainActivity.Credits -= getCost(currentLVL);
-        purchaseCost = getCost(currentLVL);
-        heroUnlockOrder++;
-        MainActivity.DPS = purchaseCost / 10 * pow(1 - 23 / 1000 * min(heroUnlockOrder, 34), min(heroUnlockOrder, 34)) * IMP_Bonus;
-    }
-
-    DPSLot( double ImprovementBonus, double CurrentLevel, int HeroUnlockOrder, double PurchaseCost ) {
+    public DPSLot( double ImprovementBonus, double CurrentLevel, int HeroUnlockOrder, double PurchaseCost ) {
         IMP_Bonus = ImprovementBonus;
         currentLVL = CurrentLevel;
         heroUnlockOrder = HeroUnlockOrder;
