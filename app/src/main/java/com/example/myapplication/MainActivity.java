@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         IV1 = (ImageView)findViewById(R.id.monstrik1);
         WP1 = (ImageView)findViewById(R.id.weapon1);
+        WP1 = (ImageView)findViewById(R.id.weapon1);
         Dhp = (TextView)findViewById(R.id.TextDHp);
 
         /* Monster death animation */

@@ -45,8 +45,6 @@ public class Shop extends AppCompatActivity implements View.OnClickListener {
         final Button Lot6 = (Button)findViewById(R.id.Lot6);
         Lot6.setOnClickListener(this);
         LOT6 = new DPSLot(1, 0, 5, 24000);
-
-        editText = (TextView) findViewById(R.id.ED);
     }
 
     @Override
