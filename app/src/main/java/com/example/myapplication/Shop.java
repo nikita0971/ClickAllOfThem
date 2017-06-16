@@ -46,11 +46,6 @@ public class Shop extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d("teg", "pidr");
-    }
 
     @Override
     public void onClick(View v) {
