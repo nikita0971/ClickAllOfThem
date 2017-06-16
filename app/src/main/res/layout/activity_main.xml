@@ -44,9 +44,10 @@
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_alignTop="@+id/monstrik1"
-        android:layout_alignRight="@+id/monstrik1"
-        android:layout_alignEnd="@+id/monstrik1"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/TextHp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
