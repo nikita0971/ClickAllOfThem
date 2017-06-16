@@ -26,11 +26,11 @@ public class Shop extends AppCompatActivity implements View.OnClickListener {
 
         Lot2 = (Button)findViewById(R.id.Lot2);
         Lot2.setOnClickListener(this);
-        Lot2.setText("Cost: " + (int)App.getLOT2().getCost() + "  DPS + " + (int)App.getLOT2().getDMG());
+        Lot2.setText("Cost: " + (int)App.getLOT2().getCost(App.getLOT2().getCurrentLVL()) + "  DPS + " + (int)App.getLOT2().getDMG());
 
         Lot3 = (Button)findViewById(R.id.Lot3);
         Lot3.setOnClickListener(this);
-        Lot3.setText("Cost: " + (int)App.getLOT3().getCost() + "  DPS + " + (int)App.getLOT3().getDMG());
+        Lot3.setText("Cost: " + (int)App.getLOT3().getCost(App.getLOT3().getCurrentLVL()) + "  DPS + " + (int)App.getLOT3().getDMG());
 
         Lot4 = (Button)findViewById(R.id.Lot4);
         Lot4.setOnClickListener(this);
@@ -44,7 +44,6 @@ public class Shop extends AppCompatActivity implements View.OnClickListener {
         Lot6.setOnClickListener(this);
         Lot6.setText("Cost: " + (int)App.getLOT6().getCost() + "  DPS + " + (int)App.getLOT6().getDMG());
 
-        editText = (TextView) findViewById(R.id.ED);
     }
 
     @Override
@@ -62,11 +61,11 @@ public class Shop extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.Lot2:
                 App.getLOT1().buyLot();
-                Lot2.setText("Cost: " + (int)App.getLOT2().getCost() + "  DPS + " + (int)App.getLOT2().getDMG());
+                Lot2.setText("Cost: " + (int)App.getLOT2().getCost(App.getLOT2().getCurrentLVL()) + "  DPS + " + (int)App.getLOT2().getDMG());
                 break;
             case R.id.Lot3:
                 App.getLOT1().buyLot();
-                Lot3.setText("Cost: " + (int)App.getLOT3().getCost() + "  DPS + " + (int)App.getLOT3().getDMG());
+                Lot3.setText("Cost: " + (int)App.getLOT3().getCost(App.getLOT3().getCurrentLVL()) + "  DPS + " + (int)App.getLOT3().getDMG());
                 break;
             case R.id.Lot4:
                 App.getLOT1().buyLot();
